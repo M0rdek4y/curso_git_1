@@ -2,4 +2,4 @@ teste de branch
 
 teste de show-1
 
-git diff archive
+git diff archive 1
