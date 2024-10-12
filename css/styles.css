@@ -54,7 +54,8 @@ textarea:focus {
 }
 
 textarea {
-    resize: none;  /* Impede o redimensionamento */
+    resize: none;  /* Impede o redimensionamento 
+    para definir o tamanho do textarea usar o height e o width*/
     height: 150px;  /* Define uma altura fixa */
 }
 
@@ -77,3 +78,4 @@ input[type="submit"]:hover {
 input[type="submit"]:active {
     transform: scale(0.98);
 }
+/* lixo */
