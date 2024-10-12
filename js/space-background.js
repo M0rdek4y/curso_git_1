@@ -1,7 +1,6 @@
 const form = document.getElementById('contactForm');
 const modal = document.getElementById('messageModal');
 const modalMessage = document.getElementById('modalMessage');
-const closeBtn = document.getElementsByClassName('close')[0];
 
 form.addEventListener('submit', function(e) {
     e.preventDefault();
@@ -30,14 +29,9 @@ form.addEventListener('submit', function(e) {
 function showModal(message) {
     modalMessage.textContent = message;
     modal.style.display = "block";
-}
-
-closeBtn.onclick = function() {
-    modal.style.display = "none";
-}
-
-window.onclick = function(event) {
-    if (event.target == modal) {
+    
+    // Oculta o modal após 3 segundos (3000 milissegundos)
+    setTimeout(function() {
         modal.style.display = "none";
-    }
+    }, 3000);
 }
