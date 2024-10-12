@@ -1,9 +1,259 @@
-* {
-    background-color: black;
-    color: grey;
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    /* 
+    margin: 0;
+    padding: 20px;
+    background-color: #1a0033;
+    background-image: 
+        radial-gradient(circle at top left, #3a0066 0%, transparent 20%),
+        radial-gradient(circle at bottom right, #3a0066 0%, transparent 20%),
+        linear-gradient(135deg, #2a0052 25%, transparent 25%),
+        linear-gradient(225deg, #2a0052 25%, transparent 25%),
+        linear-gradient(315deg, #2a0052 25%, transparent 25%),
+        linear-gradient(45deg, #2a0052 25%, transparent 25%);
+    background-size: 100% 100%, 100% 100%, 50px 50px, 50px 50px, 50px 50px, 50px 50px;
+    background-repeat: no-repeat, no-repeat, repeat, repeat, repeat, repeat;
+    animation: gradientShift 15s ease infinite; */
+    margin: 0;
+    height: 100vh;
+    background: 
+        radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+    overflow: hidden;
+}
+
+/* @keyframes gradientShift {
+    0% {
+        background-position: 0% 0%, 100% 100%, 50% 50%, 0 0, 0 0, 0 0, 0 0;
+    }
+    50% {
+        background-position: 100% 0%, 0% 100%, 50% 50%, 30px 30px, 30px 30px, 30px 30px, 30px 30px;
+    }
+    100% {
+        background-position: 0% 0%, 100% 100%, 50% 50%, 0 0, 0 0, 0 0, 0 0;
+    }
+} */
+
+.stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    transform: rotate(-45deg);
+    z-index: -1;
+}
+
+.star {
+    --star-color: var(--star-color-base);
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    background-color: var(--star-color);
+    border-radius: 50%;
+    box-shadow: 0 0 10px 0 var(--star-color);
+}
+
+.star::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, var(--star-color) 0%, transparent 100%);
+    opacity: 0.5;
+}
+
+@keyframes twinkle {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+}
+
+.nebula {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.nebula-1 {
+    background-image: radial-gradient(circle at 50% 50%, rgba(255, 0, 150, 0.3), transparent 70%);
+    animation: nebula-move 100s linear infinite;
+    opacity: 0.4;
+    mix-blend-mode: screen;
+}
+
+.nebula-2 {
+    background-image: radial-gradient(circle at 30% 70%, rgba(0, 150, 255, 0.3), transparent 60%);
+    animation: nebula-move 120s linear infinite reverse;
+    opacity: 0.3;
+    mix-blend-mode: multiply;
+}
+
+.nebula-3 {
+    background-image: radial-gradient(circle at 70% 30%, rgba(255, 200, 0, 0.2), transparent 50%);
+    animation: nebula-move 140s linear infinite;
+    opacity: 0.2;
+    mix-blend-mode: overlay;
+}
+
+@keyframes nebula-move {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 100%;
+    }
+}
+
+.nebula {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(ellipse at top left, rgba(72, 7, 138, 0.2) 0%, transparent 50%),
+        radial-gradient(ellipse at bottom right, rgba(16, 110, 200, 0.2) 0%, transparent 50%),
+        radial-gradient(ellipse at center, rgba(230, 30, 180, 0.1) 0%, transparent 50%);
+    animation: nebulaShift 30s ease infinite;
+    z-index: -1;
+}
+
+@keyframes nebulaShift {
+    0%, 100% { transform: scale(1) rotate(0deg); }
+    50% { transform: scale(1.1) rotate(5deg); }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3em;
+    text-align: center;
+    color: #4CAF50;
+    text-shadow: 
+        0 0 2px #4CAF50,
+        0 0 4px rgba(76, 175, 80, 0.6);
+    letter-spacing: 2px;
+    position: relative; /* Adicione esta linha */
+    top: 18%; /* Adicione esta linha */
+    left: 50%; /* Adicione esta linha */
+    transform: translate(-50%, -50%); /* Adicione esta linha */
+    width: 100%; /* Adicione esta linha */
+    margin: 0; /* Remova as margens existentes */
+    animation: subtle-pulse 3s ease-in-out infinite alternate;
+}
+
+@keyframes subtle-pulse {
+    0% {
+        text-shadow: 
+            0 0 2px #4CAF50,
+            0 0 4px rgba(76, 175, 80, 0.6);
+    }
+    50% {
+        text-shadow: 
+            0 0 3px #4CAF50,
+            0 0 6px rgba(76, 175, 80, 0.8),
+            0 0 9px rgba(76, 175, 80, 0.5);
+    }
+    100% {
+        text-shadow: 
+            0 0 2px #4CAF50,
+            0 0 4px rgba(76, 175, 80, 0.6);
+    }
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    padding-top: calc(10vh + 50px);
 }
 
 table {
-    background-color: red;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
 }
-/* edit */
+
+td {
+    padding: 12px;
+}
+
+label {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+input[type="text"], 
+input[type="email"], 
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #4CAF50;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #333;
+    color: #e0e0e0;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus, 
+input[type="email"]:focus, 
+textarea:focus {
+    border-color: #9b59b6;
+    outline: none;
+    box-shadow: 0 0 5px rgba(155, 89, 182, 0.5);
+}
+
+textarea {
+    resize: none;  /* Impede o redimensionamento */
+    height: 150px;  /* Define uma altura fixa */
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+input[type="submit"]:hover {
+    background-color: #9b59b6;
+}
+
+input[type="submit"]:active {
+    transform: scale(0.98);
+}
+
+
+/* Estilo para a seleção de texto */
+::selection {
+    background-color: #4CAF50; /* Cor de fundo da seleção */
+    color: #000000; /* Cor do texto selecionado */
+}
+
+/* Para navegadores mais antigos do Firefox */
+::-moz-selection {
+    background-color: #4CAF50;
+    color: #000000;
+}
