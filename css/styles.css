@@ -1,9 +1,79 @@
-* {
-    background-color: black;
-    color: grey;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+h1 {
+    text-align: center;
+    color: #4CAF50;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
 }
 
 table {
-    background-color: red;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
 }
-/* edit */
+
+td {
+    padding: 12px;
+}
+
+label {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+input[type="text"], 
+input[type="email"], 
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #333;
+    color: #e0e0e0;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus, 
+input[type="email"]:focus, 
+textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+textarea {
+    resize: none;  /* Impede o redimensionamento */
+    height: 150px;  /* Define uma altura fixa */
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+input[type="submit"]:active {
+    transform: scale(0.98);
+}
