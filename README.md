@@ -10,7 +10,7 @@ Este repositório traz uma lista completa e organizada de **símbolos de marcado
 
 ### 🔵 Círculos / Bolinhas
 
-<code>
+<code><pre>
 +--------+--------------+------------------------------------------+
 | Símbolo|  Código Alt  |                 Nome                     |
 +--------+--------------+------------------------------------------+
@@ -20,7 +20,7 @@ Este repositório traz uma lista completa e organizada de **símbolos de marcado
 |   `●`  | Alt + 7      | Black Circle (cheio, grande)             |
 |   `○`  | Alt + 9675   | White Circle (vazado)                    |
 +--------+--------------+------------------------------------------+
-</code>
+</pre></code>
 
 ---
 
@@ -45,10 +45,10 @@ Este repositório traz uma lista completa e organizada de **símbolos de marcado
 +--------+--------------+------------------------------------------+
 | Símbolo|  Código Alt  |                 Nome                     |
 +--------+--------------+------------------------------------------+
-|   `→`  | Alt + 26     | Right Arrow                             |
-|   `►`  | Alt + 16     | Black Right-Pointing Pointer            |
-|   `▶`  | Alt + 9654   | Right-Pointing Triangle                 |
-|  `➤`   | Alt + 10148  | Arrowhead de lista estilizado           |
+|   `→`  | Alt + 26     | Right Arrow                              |
+|   `►`  | Alt + 16     | Black Right-Pointing Pointer             |
+|   `▶`  | Alt + 9654  | Right-Pointing Triangle                 |
+|  `➤`   | Alt + 10148 | Arrowhead de lista estilizado            |
 +--------+--------------+------------------------------------------+
 </code></pre>
 
@@ -98,7 +98,7 @@ Este repositório traz uma lista completa e organizada de **símbolos de marcado
 
 <pre><code>
 +--------+-----------------------------+
-| Visual |           Código           |
+| Visual |           Código            |
 +--------+-----------------------------+
 |  `•`   | Alt + 0149                  |
 | `• `   | Alt + 0149 + espaço         |
