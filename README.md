@@ -10,7 +10,7 @@ Este repositório traz uma lista completa e organizada de **símbolos de marcado
 
 ### 🔵 Círculos / Bolinhas
 
-<code><pre>
+<pre><code>
 +--------+--------------+------------------------------------------+
 | Símbolo|  Código Alt  |                 Nome                     |
 +--------+--------------+------------------------------------------+
@@ -20,7 +20,7 @@ Este repositório traz uma lista completa e organizada de **símbolos de marcado
 |   `●`  | Alt + 7      | Black Circle (cheio, grande)             |
 |   `○`  | Alt + 9675   | White Circle (vazado)                    |
 +--------+--------------+------------------------------------------+
-</pre></code>
+</code></pre>
 
 ---
 
