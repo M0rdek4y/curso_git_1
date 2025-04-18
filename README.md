@@ -10,6 +10,7 @@ Este repositório traz uma lista completa e organizada de **símbolos de marcado
 
 ### 🔵 Círculos / Bolinhas
 
+<pre><code>
 +--------+--------------+------------------------------------------+
 | Símbolo|  Código Alt  |                 Nome                     |
 +--------+--------------+------------------------------------------+
@@ -19,11 +20,13 @@ Este repositório traz uma lista completa e organizada de **símbolos de marcado
 |   `●`  | Alt + 7      | Black Circle (cheio, grande)             |
 |   `○`  | Alt + 9675   | White Circle (vazado)                    |
 +--------+--------------+------------------------------------------+
+</code></pre>
 
 ---
 
 ### ◼️ Quadrados e Retângulos
 
+<pre><code>
 +--------+--------------+--------------------------+
 | Símbolo|  Código Alt  |           Nome           |
 +--------+--------------+--------------------------+
@@ -32,11 +35,13 @@ Este repositório traz uma lista completa e organizada de **símbolos de marcado
 |   `■`  | Alt + 254    | Black Square             |
 |   `□`  | Alt + 9633   | White Square             |
 +--------+--------------+--------------------------+
+</code></pre>
 
 ---
 
 ### ➡️ Setas e Ponteiros
 
+<pre><code>
 +--------+--------------+------------------------------------------+
 | Símbolo|  Código Alt  |                 Nome                     |
 +--------+--------------+------------------------------------------+
@@ -45,22 +50,26 @@ Este repositório traz uma lista completa e organizada de **símbolos de marcado
 |   `▶`  | Alt + 9654   | Right-Pointing Triangle                 |
 |  `➤`   | Alt + 10148  | Arrowhead de lista estilizado           |
 +--------+--------------+------------------------------------------+
+</code></pre>
 
 ---
 
 ### 🔺 Triângulos e Marcadores Especiais
 
+<pre><code>
 +--------+--------------+----------------------------+
 | Símbolo|  Código Alt  |           Nome             |
 +--------+--------------+----------------------------+
 |   `‣`  | Alt + 8227   | Triangular Bullet          |
 |   `▸`  | Alt + 9658   | Small Triangle Bullet      |
 +--------+--------------+----------------------------+
+</code></pre>
 
 ---
 
 ### ♦️ Diamantes e Outras Formas
 
+<pre><code>
 +--------+--------------+-------------------------+
 | Símbolo|  Código Alt  |          Nome           |
 +--------+--------------+-------------------------+
@@ -68,22 +77,26 @@ Este repositório traz uma lista completa e organizada de **símbolos de marcado
 |   `◆`  | Alt + 9670   | White Diamond           |
 |  `⬥`   | Alt + 11013  | Small Diamond Shape     |
 +--------+--------------+-------------------------+
+</code></pre>
 
 ---
 
 ### ☝️ Mãos / Indicadores
 
+<pre><code>
 +--------+--------------+------------------------------+
 | Símbolo|  Código Alt  |            Nome              |
 +--------+--------------+------------------------------+
 |   `☛`  | Alt + 9755   | Black Right Pointing Index   |
 |   `☞`  | Alt + 9758   | White Right Pointing Index   |
 +--------+--------------+------------------------------+
+</code></pre>
 
 ---
 
 ### 🧩 Variações com Espaçamento no Bullet `•`
 
+<pre><code>
 +--------+-----------------------------+
 | Visual |           Código           |
 +--------+-----------------------------+
@@ -93,6 +106,7 @@ Este repositório traz uma lista completa e organizada de **símbolos de marcado
 | ` • `  | espaço + Alt + 0149 + espaço|
 |  `·`   | Alt + 0183 (espac. natural) |
 +--------+-----------------------------+
+</code></pre>
 
 ---
 
