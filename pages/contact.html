@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../background-styles.css">
 </head>
-<body>
+
+<body id="bodybg">
     <h1>Entre em Contato</h1>
     <form id="contactForm" action="https://formspree.io/f/mvgooojb" method="post">
         <div class="form-container">
@@ -41,18 +44,18 @@
     <div class="nebula nebula-2"></div>
     <div class="nebula nebula-3"></div>
     <div id="messageModal" class="modal">
-    <div class="modal-content">
-        <p id="modalMessage"></p>
+        <div class="modal-content">
+            <p id="modalMessage"></p>
+        </div>
     </div>
-    </div>
-    <script src="js/space-background.js"></script>
+    <script src="../js/space-background.js"></script>
     <script>
         const form = document.getElementById('contactForm');
         const formMessage = document.getElementById('formMessage');
-    
-        form.addEventListener('submit', function(e) {
+
+        form.addEventListener('submit', function (e) {
             e.preventDefault();
-            
+
             fetch(form.action, {
                 method: 'POST',
                 body: new FormData(form),
@@ -60,19 +63,20 @@
                     'Accept': 'application/json'
                 }
             })
-            .then(response => response.json())
-            .then(data => {
-                if (data.ok) {
-                    formMessage.innerHTML = "Mensagem enviada com sucesso!";
-                    form.reset();
-                } else {
+                .then(response => response.json())
+                .then(data => {
+                    if (data.ok) {
+                        formMessage.innerHTML = "Mensagem enviada com sucesso!";
+                        form.reset();
+                    } else {
+                        formMessage.innerHTML = "Ocorreu um erro. Por favor, tente novamente.";
+                    }
+                })
+                .catch(error => {
                     formMessage.innerHTML = "Ocorreu um erro. Por favor, tente novamente.";
-                }
-            })
-            .catch(error => {
-                formMessage.innerHTML = "Ocorreu um erro. Por favor, tente novamente.";
-            });
+                });
         });
     </script>
 </body>
+
 </html>

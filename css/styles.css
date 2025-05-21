@@ -19,7 +19,7 @@ body {
     animation: gradientShift 15s ease infinite; */
     margin: 0;
     height: 100vh;
-    background: 
+    background:
         radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
     overflow: hidden;
 }
@@ -68,9 +68,17 @@ body {
 }
 
 @keyframes twinkle {
-    0% { opacity: 0.5; }
-    50% { opacity: 1; }
-    100% { opacity: 0.5; }
+    0% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
 }
 
 .nebula {
@@ -112,6 +120,7 @@ body {
     from {
         background-position: 0 0;
     }
+
     to {
         background-position: 100% 100%;
     }
@@ -121,7 +130,7 @@ body {
     position: fixed;
     width: 100%;
     height: 100%;
-    background: 
+    background:
         radial-gradient(ellipse at top left, rgba(72, 7, 138, 0.2) 0%, transparent 50%),
         radial-gradient(ellipse at bottom right, rgba(16, 110, 200, 0.2) 0%, transparent 50%),
         radial-gradient(ellipse at center, rgba(230, 30, 180, 0.1) 0%, transparent 50%);
@@ -130,8 +139,15 @@ body {
 }
 
 @keyframes nebulaShift {
-    0%, 100% { transform: scale(1) rotate(0deg); }
-    50% { transform: scale(1.1) rotate(5deg); }
+
+    0%,
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
+
+    50% {
+        transform: scale(1.1) rotate(5deg);
+    }
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
@@ -141,35 +157,35 @@ h1 {
     font-size: 3em;
     text-align: center;
     color: #4CAF50;
-    text-shadow: 
+    text-shadow:
         0 0 2px #4CAF50,
         0 0 4px rgba(76, 175, 80, 0.6);
     letter-spacing: 2px;
-    position: relative; /* Adicione esta linha */
-    top: 18%; /* Adicione esta linha */
-    left: 50%; /* Adicione esta linha */
-    transform: translate(-50%, -50%); /* Adicione esta linha */
-    width: 100%; /* Adicione esta linha */
-    margin: 0; /* Remova as margens existentes */
-    animation: subtle-pulse 3s ease-in-out infinite alternate;
+    position: relative;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    margin: 0;
+    animation: subtle-pulse 4s ease-in-out infinite alternate;
 }
 
 @keyframes subtle-pulse {
     0% {
         text-shadow: 
             0 0 2px #4CAF50,
-            0 0 4px rgba(76, 175, 80, 0.6);
+            0 0 4px rgba(76, 175, 80, 0.55);
     }
     50% {
         text-shadow: 
             0 0 3px #4CAF50,
-            0 0 6px rgba(76, 175, 80, 0.8),
-            0 0 9px rgba(76, 175, 80, 0.5);
+            0 0 6px rgba(76, 175, 80, 0.75),
+            0 0 8px rgba(76, 175, 80, 0.45);
     }
     100% {
         text-shadow: 
             0 0 2px #4CAF50,
-            0 0 4px rgba(76, 175, 80, 0.6);
+            0 0 4px rgba(76, 175, 80, 0.55);
     }
 }
 
@@ -187,27 +203,45 @@ table {
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
-    background-color: #2a2a2a;
+    background: rgba(255, 255, 255, 0.05); /* fundo translúcido */
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    -webkit-backdrop-filter: blur(10px); /* compatibilidade com Safari */
+    backdrop-filter: blur(10px); /* aplica o blur */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* borda sutil */
 }
 
 td {
-    padding: 12px;
+    padding: 7px;
 }
 
 label {
+
+    text-align: center;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    height: 50px;
+    font-size: 23px;
+    line-height: 50px;
+    padding: 0px 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: "Raleway", sans-serif;
+    transition: color 0.7s;
     font-weight: bold;
     color: #4CAF50;
 }
 
-input[type="text"], 
-input[type="email"], 
+input[type="text"],
+input[type="email"],
 textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #4CAF50;
+    border: 1px solid #9b59b6;
     border-radius: 4px;
     box-sizing: border-box;
     background-color: #333;
@@ -215,34 +249,51 @@ textarea {
     transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-input[type="text"]:focus, 
-input[type="email"]:focus, 
+input[type="text"]:focus,
+input[type="email"]:focus,
 textarea:focus {
-    border-color: #9b59b6;
+    border-color: #4CAF50;
     outline: none;
     box-shadow: 0 0 5px rgba(155, 89, 182, 0.5);
 }
 
 textarea {
-    resize: none;  /* Impede o redimensionamento */
-    height: 150px;  /* Define uma altura fixa */
+    resize: none;
+    /* Impede o redimensionamento */
+    height: 150px;
+    width: 250px;
+    /* Define uma altura fixa */
 }
 
 input[type="submit"] {
     width: 100%;
     padding: 12px;
     background-color: #4CAF50;
-    color: white;
+    color: #1B2735;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s, transform 0.1s;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.7s ease-in-out, transform 0.6s ease-in-out, color 0.7s, font-size 0.7s;
 }
 
+
 input[type="submit"]:hover {
-    background-color: #9b59b6;
+    background-color: #9634bd;
+    transform: scale(1.007);
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.7s, transform 0.6s, color 0.7s, font-size 0.7s;
 }
+
 
 input[type="submit"]:active {
     transform: scale(0.98);
@@ -251,8 +302,10 @@ input[type="submit"]:active {
 
 /* Estilo para a seleção de texto */
 ::selection {
-    background-color: #4CAF50; /* Cor de fundo da seleção */
-    color: #000000; /* Cor do texto selecionado */
+    background-color: #4CAF50;
+    /* Cor de fundo da seleção */
+    color: #000000;
+    /* Cor do texto selecionado */
 }
 
 /* Para navegadores mais antigos do Firefox */
@@ -260,6 +313,7 @@ input[type="submit"]:active {
     background-color: #4CAF50;
     color: #000000;
 }
+
 /* configuração pop-up */
 .modal {
     display: none;
@@ -277,7 +331,7 @@ input[type="submit"]:active {
     margin: 0 auto;
     padding: 15px 20px;
     border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     display: inline-block;
     max-width: 80%;
 }
@@ -320,9 +374,17 @@ input[type="submit"]:active {
 }
 
 @keyframes twinkle {
-    0% { opacity: 0.5; }
-    50% { opacity: 1; }
-    100% { opacity: 0.5; }
+    0% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
 }
 
 .star {
