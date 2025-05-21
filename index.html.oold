@@ -2,67 +2,58 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact</title>
-  <link rel="stylesheet" href="css/background-styles.css">
-  <link rel="stylesheet" href="css/text-styles.css">
-  <link rel="stylesheet" href="css/header-styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Master Active — Página Inicial</title>
+  <link rel="stylesheet" href="css/background-styles.css" />
+  <link rel="stylesheet" href="css/text-styles.css" />
+  <link rel="stylesheet" href="css/header-styles.css" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body id="bodybg">
-  <!-- INICIO HEADER -->
+  <!-- INÍCIO DO HEADER -->
   <header>
     <nav>
       <div class="logo">
         <img src="https://github.com/M0rdek4y/use-images/blob/main/Aseprite/Alien/Speak/AlienSpeakLarge.gif?raw=true"
-          alt="Logo da empresa">
+          alt="Logo da empresa" />
       </div>
       <ul>
-        <li><a href="index.html" class="nav-link">Início</a></li>
+        <li><a href="index.html" class="nav-link active">Início</a></li>
         <li><a href="pages/about.html" class="nav-link">Sobre</a></li>
-        <!-- <li><a href="services.html" class="nav-link">Serviços</a></li> -->
         <li><a href="pages/contact.html" class="nav-link">Contato</a></li>
       </ul>
     </nav>
   </header>
-  <!-- FIM HEADER -->
+  <!-- FIM DO HEADER -->
 
   <!-- HERO SECTION -->
   <main class="hero-section">
     <section class="hero">
       <h1 class="hero-title">Bem-vindo ao Master Active</h1>
-      <p class="hero-subtitle">Ative seu Windows com estilo e tecnologia futurista.</p>
+      <p class="hero-subtitle">Ative seu Windows com estilo.</p>
       <a href="pages/contact.html" class="cta-button">Entrar em Contato</a>
     </section>
   </main>
 
-  <!-- INICION MAIN -->
-  <h1>Master Active</h1>
-  <h2>Windows</h2>
-  <!-- FIM HEADER -->
-
-  <!-- INICIO FOOTER -->
-  <!-- FIM FOOTER -->
-
-  <!-- CONFIGURAÇÕES DO BACKGROUND -->
-  <div id="formMessage"></div>
+  <!-- ELEMENTOS VISUAIS DE FUNDO -->
   <div id="stars"></div>
   <div class="stars"></div>
   <div class="nebula"></div>
   <div class="nebula nebula-1"></div>
   <div class="nebula nebula-2"></div>
   <div class="nebula nebula-3"></div>
+
+  <!-- MODAL DE MENSAGEM -->
   <div id="messageModal" class="modal">
     <div class="modal-content">
       <p id="modalMessage"></p>
     </div>
   </div>
-  <!-- FIM CONFIGURAÇÕES DO BACKGROUND -->
 
-  <!-- INICIO SCRIPTS -->
+  <!-- SCRIPTS -->
   <script src="js/space-background.js"></script>
-  <!-- FIM SCRIPTS -->
 </body>
 
 </html>

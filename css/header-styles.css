@@ -59,6 +59,7 @@ nav a:hover {
 /* CONFIGURAÇÕES DE LOGO */
 
 .logo img {
+    margin-left: 20px;
     width: 50px;
     /* Largura do logotipo */
 }

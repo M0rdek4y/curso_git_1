@@ -86,24 +86,59 @@ h2 {
     color: #000000;
 }
 
-/* talvez util
-.form-container {
+.hero-section {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    min-height: 100vh;
-    padding: 20px;
-    box-sizing: border-box;
-    padding-top: calc(10vh + 50px);
+    align-items: center;
+    min-height: 80vh;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding: 40px 20px;
+    flex-direction: column;
 }
 
-table {
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
-    background-color: #2a2a2a;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+.hero-title {
+    font-size: 3em;
+    font-family: 'Orbitron', sans-serif;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    animation: subtle-pulse 4s ease-in-out infinite alternate;
 }
- */
+
+.hero-subtitle {
+    font-size: 1.2em;
+    color: #ccc;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    width: 100%;
+    max-width: 250px;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: #1B2735;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.7s ease-in-out, transform 0.6s ease-in-out, color 0.7s;
+}
+
+.cta-button:hover {
+    background-color: #9634bd;
+    transform: scale(1.05); /* apenas o scale, sem alterar font-size */
+    color: white;
+}
+
+.cta-button:active {
+    transform: scale(0.98);
+}
