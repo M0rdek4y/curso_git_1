@@ -1,13 +1,13 @@
-const form = document.getElementById('contactForm');
+const body = document.getElementById('bodybg');
 const modal = document.getElementById('messageModal');
 const modalMessage = document.getElementById('modalMessage');
 
-form.addEventListener('submit', function(e) {
+body.addEventListener('submit', function(e) {
     e.preventDefault();
     
-    fetch(form.action, {
+    fetch(body.action, {
         method: 'POST',
-        body: new FormData(form),
+        body: new bodyData(body),
         headers: {
             'Accept': 'application/json'
         }
@@ -16,7 +16,7 @@ form.addEventListener('submit', function(e) {
     .then(data => {
         if (data.ok) {
             showModal("Mensagem enviada com sucesso!");
-            form.reset();
+            body.reset();
         } else {
             showModal("Ocorreu um erro. Por favor, tente novamente.");
         }
